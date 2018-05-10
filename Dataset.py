@@ -62,6 +62,9 @@ class DataSet:
   @property
   def steps(self):
     return self.samples // self.batch_size
+  @property
+  def mode(self):
+    return self.samples % self.batch_size
 
 
 if __name__ == "__main__":
